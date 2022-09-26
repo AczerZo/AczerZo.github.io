@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>hexo部署后没更新的解决方法</title>
+    <link href="/2022/09/27/hexo%E9%83%A8%E7%BD%B2%E5%90%8E%E6%B2%A1%E6%9B%B4%E6%96%B0%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+    <url>/2022/09/27/hexo%E9%83%A8%E7%BD%B2%E5%90%8E%E6%B2%A1%E6%9B%B4%E6%96%B0%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
+    
+    <content type="html"><![CDATA[<h3 id="1-使用以下代码"><a href="#1-使用以下代码" class="headerlink" title="1.使用以下代码"></a>1.使用以下代码</h3><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo clean</span><br><span class="hljs-attribute">hexo g</span><br><span class="hljs-attribute">hexo d</span><br></code></pre></td></tr></table></figure><h3 id="2-分支问题"><a href="#2-分支问题" class="headerlink" title="2.分支问题"></a>2.分支问题</h3><ul><li>查看”_config.yml”文件下的branch</li></ul><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs dts"><span class="hljs-symbol">deploy:</span><br><span class="hljs-symbol">  type:</span> git<br><span class="hljs-symbol">  repo:</span> https:<span class="hljs-comment">//github.com/AczerZo/AczerZo.github.io.git</span><br><span class="hljs-symbol">  branch:</span> master<br></code></pre></td></tr></table></figure><ul><li>打开github仓库，选择setting</li><li>选择pages，选择Branch，点击save</li></ul><h3 id="3-浏览器缓存问题"><a href="#3-浏览器缓存问题" class="headerlink" title="3.浏览器缓存问题"></a>3.浏览器缓存问题</h3>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hexo常用命令</title>
     <link href="/2022/09/25/%E6%96%87%E7%AB%A0-title/"/>
     <url>/2022/09/25/%E6%96%87%E7%AB%A0-title/</url>
