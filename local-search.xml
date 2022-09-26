@@ -8,7 +8,7 @@
     <link href="/2022/09/25/%E6%96%87%E7%AB%A0-title/"/>
     <url>/2022/09/25/%E6%96%87%E7%AB%A0-title/</url>
     
-    <content type="html"><![CDATA[<ol><li><p>新建文章</p><p><code>hexo new 名称</code></p></li><li><p>部署文件</p><p><code>hexo g -d</code></p></li></ol>]]></content>
+    <content type="html"><![CDATA[<ol><li><p>新建文章：<code>hexo new 名称</code></p></li><li><p>生成文件：<code>hexo g </code></p></li><li><p>清除文件：<code>hexo clean</code></p></li><li><p>部署网站：<code>hexo d</code></p></li></ol>]]></content>
     
     
     
