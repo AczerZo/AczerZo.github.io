@@ -4,11 +4,11 @@
   
   
   <entry>
-    <title>Hexo+GitHub搭建博客</title>
+    <title>Hexo常用命令</title>
     <link href="/2022/09/25/%E6%96%87%E7%AB%A0-title/"/>
     <url>/2022/09/25/%E6%96%87%E7%AB%A0-title/</url>
     
-    <content type="html"><![CDATA[<h1 id="一、环境"><a href="#一、环境" class="headerlink" title="一、环境"></a>一、环境</h1><h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1.安装"></a>1.安装</h2><h3 id="1-Git"><a href="#1-Git" class="headerlink" title="(1)Git"></a>(1)Git</h3><h3 id="2-Node-js"><a href="#2-Node-js" class="headerlink" title="(2)Node.js"></a>(2)Node.js</h3><h3 id="3-Hexo"><a href="#3-Hexo" class="headerlink" title="(3)Hexo"></a>(3)Hexo</h3><p><code>npm install -g hexo-cli</code></p><h2 id="2-检查"><a href="#2-检查" class="headerlink" title="2.检查"></a>2.检查</h2><p><code>git version</code></p><p><code>node -v</code></p><p><code>npm -v</code></p><p><code>hexo -v</code></p><h1 id="二、博客"><a href="#二、博客" class="headerlink" title="二、博客"></a>二、博客</h1><h2 id="1-初始化"><a href="#1-初始化" class="headerlink" title="1.初始化"></a>1.初始化</h2><p><code>hexo init address</code><br><code>cd address</code><br><code>npm install</code></p><h2 id="2-启动"><a href="#2-启动" class="headerlink" title="2.启动"></a>2.启动</h2><p><code>hexo server</code></p><h2 id="3-写博"><a href="#3-写博" class="headerlink" title="3.写博"></a>3.写博</h2><p><code>hexo new post title</code></p>]]></content>
+    <content type="html"><![CDATA[<ol><li><p>新建文章</p><p><code>hexo new 名称</code></p></li><li><p>部署文件</p><p><code>hexo g -d</code></p></li></ol>]]></content>
     
     
     
