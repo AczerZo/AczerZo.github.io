@@ -16,21 +16,21 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="导入包  1import xlwings as xw   打开Excel程序（App）  1app &#x3D; xw.App(visible&#x3D;True,add_book&#x3D;False)   打开Excel文件（Book）  1wk &#x3D; app.books.open(&quot;test.xlsx&quot;)   选择工作表（Sheet）  1sht &#x3D; wk.sheets[&quot;Sheet1&amp;qu">
+    <meta name="description" content="一、前置知识：位、字节  位（bit）   数据存储的最小单位 可储存0或1   字节（Byte）   数据处理的最小单位 1字节&#x3D;8位  二、前置知识：栈、堆  栈 堆  二、基本类型  八种类型     类型 种类 字节 默认值 封装类型    整型 byte 1 0 Byte   整型 short 2 0 Short   整型 int 4 0 Integer   整型 long 8">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python操作Excel-xlwings篇">
-<meta property="og:url" content="http://example.com/2022/09/27/Python%E6%93%8D%E4%BD%9CExcel-xlwings%E7%AF%87/index.html">
+<meta property="og:title" content="Java基础（一）数据类型">
+<meta property="og:url" content="http://example.com/2022/10/01/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="导入包  1import xlwings as xw   打开Excel程序（App）  1app &#x3D; xw.App(visible&#x3D;True,add_book&#x3D;False)   打开Excel文件（Book）  1wk &#x3D; app.books.open(&quot;test.xlsx&quot;)   选择工作表（Sheet）  1sht &#x3D; wk.sheets[&quot;Sheet1&amp;qu">
+<meta property="og:description" content="一、前置知识：位、字节  位（bit）   数据存储的最小单位 可储存0或1   字节（Byte）   数据处理的最小单位 1字节&#x3D;8位  二、前置知识：栈、堆  栈 堆  二、基本类型  八种类型     类型 种类 字节 默认值 封装类型    整型 byte 1 0 Byte   整型 short 2 0 Short   整型 int 4 0 Integer   整型 long 8">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-09-27T15:13:12.000Z">
-<meta property="article:modified_time" content="2022-09-30T17:04:52.990Z">
+<meta property="article:published_time" content="2022-10-01T06:01:51.000Z">
+<meta property="article:modified_time" content="2022-10-01T06:02:02.113Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Python操作Excel-xlwings篇 - Hexo</title>
+  <title>Java基础（一）数据类型 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -195,7 +195,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Python操作Excel-xlwings篇"></span>
+            <span id="subtitle" data-typed-text="Java基础（一）数据类型"></span>
           
         </div>
 
@@ -206,8 +206,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-09-27 23:13" pubdate>
-          2022年9月27日 晚上
+        <time datetime="2022-10-01 14:01" pubdate>
+          2022年10月1日 下午
         </time>
       </span>
     
@@ -218,7 +218,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          487 字
+          399 字
         
       </span>
     
@@ -229,7 +229,7 @@
         
         
         
-          5 分钟
+          4 分钟
         
       </span>
     
@@ -267,38 +267,125 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Python操作Excel-xlwings篇</h1>
+            <h1 style="display: none">Java基础（一）数据类型</h1>
             
             
               <div class="markdown-body">
                 
-                <ol>
-<li>导入包</li>
+                <p>一、前置知识：位、字节</p>
+<ol>
+<li>位（bit）</li>
 </ol>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> xlwings <span class="hljs-keyword">as</span> xw<br></code></pre></td></tr></table></figure>
-
+<ul>
+<li>数据存储的最小单位</li>
+<li>可储存0或1</li>
+</ul>
 <ol start="2">
-<li>打开Excel程序（App）</li>
+<li>字节（Byte）</li>
 </ol>
-<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ini"><span class="hljs-attr">app</span> = xw.App(visible=<span class="hljs-literal">True</span>,add_book=<span class="hljs-literal">False</span>)<br></code></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>打开Excel文件（Book）</li>
+<ul>
+<li>数据处理的最小单位</li>
+<li>1字节&#x3D;8位</li>
+</ul>
+<p>二、前置知识：栈、堆</p>
+<ol>
+<li>栈</li>
+<li>堆</li>
 </ol>
-<figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs abnf"><span class="hljs-attribute">wk</span> <span class="hljs-operator">=</span> app.books.open(<span class="hljs-string">&quot;test.xlsx&quot;</span>)<br></code></pre></td></tr></table></figure>
-
-<ol start="4">
-<li>选择工作表（Sheet）</li>
+<p>二、基本类型</p>
+<ol>
+<li>八种类型</li>
 </ol>
-<figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs abnf"><span class="hljs-attribute">sht</span> <span class="hljs-operator">=</span> wk.sheets[<span class="hljs-string">&quot;Sheet1&quot;</span>]<br></code></pre></td></tr></table></figure>
-
-<p>5. </p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python">s = []                  <span class="hljs-comment"># 创建一个空列表</span><br><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">5</span>):      <span class="hljs-comment"># 创建一个5行的列表（行）</span><br>    s.append([])        <span class="hljs-comment"># 在空的列表中添加空的列表</span><br>    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">5</span>):  <span class="hljs-comment"># 循环每一行的每一个元素（列）</span><br>        s[i].append(j)  <span class="hljs-comment"># 为内层列表添加元素</span><br><span class="hljs-built_in">print</span>(s)                <span class="hljs-comment"># 输出列表</span><br></code></pre></td></tr></table></figure>
-
-<ol start="6">
-<li>列操作</li>
+<table>
+<thead>
+<tr>
+<th align="center">类型</th>
+<th align="center">种类</th>
+<th align="center">字节</th>
+<th align="center">默认值</th>
+<th align="center">封装类型</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">整型</td>
+<td align="center">byte</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">Byte</td>
+</tr>
+<tr>
+<td align="center">整型</td>
+<td align="center">short</td>
+<td align="center">2</td>
+<td align="center">0</td>
+<td align="center">Short</td>
+</tr>
+<tr>
+<td align="center">整型</td>
+<td align="center">int</td>
+<td align="center">4</td>
+<td align="center">0</td>
+<td align="center">Integer</td>
+</tr>
+<tr>
+<td align="center">整型</td>
+<td align="center">long</td>
+<td align="center">8</td>
+<td align="center">0l</td>
+<td align="center">Long</td>
+</tr>
+<tr>
+<td align="center">浮点型</td>
+<td align="center">float</td>
+<td align="center">4</td>
+<td align="center">0.0f</td>
+<td align="center">Float</td>
+</tr>
+<tr>
+<td align="center">浮点型</td>
+<td align="center">double</td>
+<td align="center">8</td>
+<td align="center">0.0d</td>
+<td align="center">Double</td>
+</tr>
+<tr>
+<td align="center">字符型</td>
+<td align="center">char</td>
+<td align="center">2</td>
+<td align="center">‘u0000’</td>
+<td align="center">Character</td>
+</tr>
+<tr>
+<td align="center">布尔型</td>
+<td align="center">boolean</td>
+<td align="center"></td>
+<td align="center">false</td>
+<td align="center">Boolean</td>
+</tr>
+</tbody></table>
+<ol start="2">
+<li><p>基本类型之间的转换</p>
+</li>
+<li><p>基本类型与封装类型的区别</p>
+</li>
 </ol>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment">#获取一列数据</span><br>sht.<span class="hljs-built_in">range</span>(<span class="hljs-string">&quot;A1:A5&quot;</span>).value<br><span class="hljs-comment">#写入一列数据</span><br><span class="hljs-built_in">list</span> = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>]<br>sht.<span class="hljs-built_in">range</span>(<span class="hljs-string">&#x27;A1&#x27;</span>).options(transpose=<span class="hljs-literal">True</span>).value = <span class="hljs-built_in">list</span><br><span class="hljs-comment">#删除一列数据</span><br>sht[<span class="hljs-string">&#x27;A:A&#x27;</span>].delete()<br></code></pre></td></tr></table></figure>
+<p>三、引用类型</p>
+<ol>
+<li>类、接口、数组</li>
+</ol>
+<p>四、基本类型与引用类型的区别</p>
+<ol>
+<li>概念</li>
+</ol>
+<ul>
+<li>基础类型：变量指向数值</li>
+<li>引用类型：变量指向地址</li>
+</ul>
+<ol start="2">
+<li>内存</li>
+</ol>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs ada"><span class="hljs-number">1</span>, 基本数据类型 : 被创建时 , 在栈内存中会被划分出一定的内存 , 并将数值存储在该内存中 .<br><span class="hljs-number">2</span>, 引用数据类型 : 被创建时 , 首先会在栈内存中分配一块空间 , 然后在堆内存中也会分配一块具体的空间用来<br></code></pre></td></tr></table></figure>
+
 
                 
               </div>
@@ -316,8 +403,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Python操作Excel-xlwings篇</div>
-      <div>http://example.com/2022/09/27/Python操作Excel-xlwings篇/</div>
+      <div>Java基础（一）数据类型</div>
+      <div>http://example.com/2022/10/01/Java基础（一）数据类型/</div>
     </div>
     <div class="license-meta">
       
@@ -329,7 +416,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年9月27日</div>
+          <div>2022年10月1日</div>
         </div>
       
       
@@ -361,18 +448,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/10/01/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" title="Java基础（一）数据类型">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Java基础（一）数据类型</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/09/27/Python%E6%93%8D%E4%BD%9CExcel-Pandas%E7%AF%87/" title="Python操作Excel-Pandas篇">
-                        <span class="hidden-mobile">Python操作Excel-Pandas篇</span>
+                      <a href="/2022/09/27/Python%E6%93%8D%E4%BD%9CExcel-xlwings%E7%AF%87/" title="Python操作Excel-xlwings篇">
+                        <span class="hidden-mobile">Python操作Excel-xlwings篇</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
