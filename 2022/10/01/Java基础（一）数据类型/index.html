@@ -16,15 +16,15 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="一、前置知识：位、字节  位（bit）   数据存储的最小单位 可储存0或1   字节（Byte）   数据处理的最小单位 1字节&#x3D;8位  二、前置知识：栈、堆  栈 堆  二、基本类型  八种类型     类型 种类 字节 默认值 封装类型    整型 byte 1 0 Byte   整型 short 2 0 Short   整型 int 4 0 Integer   整型 long 8">
+    <meta name="description" content="一、前置知识  位（bit）   数据存储的最小单位 可储存0或1   字节（Byte）   数据处理的最小单位 1字节&#x3D;8位  二、基本类型  八种类型     类型 种类 字节 默认值 封装类型    整型 byte 1 0 Byte   整型 short 2 0 Short   整型 int 4 0 Integer   整型 long 8 0l Long   浮点型 float 4">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java基础（一）数据类型">
 <meta property="og:url" content="http://example.com/2022/10/01/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="一、前置知识：位、字节  位（bit）   数据存储的最小单位 可储存0或1   字节（Byte）   数据处理的最小单位 1字节&#x3D;8位  二、前置知识：栈、堆  栈 堆  二、基本类型  八种类型     类型 种类 字节 默认值 封装类型    整型 byte 1 0 Byte   整型 short 2 0 Short   整型 int 4 0 Integer   整型 long 8">
+<meta property="og:description" content="一、前置知识  位（bit）   数据存储的最小单位 可储存0或1   字节（Byte）   数据处理的最小单位 1字节&#x3D;8位  二、基本类型  八种类型     类型 种类 字节 默认值 封装类型    整型 byte 1 0 Byte   整型 short 2 0 Short   整型 int 4 0 Integer   整型 long 8 0l Long   浮点型 float 4">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-10-01T06:01:51.000Z">
-<meta property="article:modified_time" content="2022-10-01T06:02:02.113Z">
+<meta property="article:modified_time" content="2022-10-03T00:13:36.999Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -218,7 +218,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          399 字
+          315 字
         
       </span>
     
@@ -229,7 +229,7 @@
         
         
         
-          4 分钟
+          3 分钟
         
       </span>
     
@@ -272,7 +272,7 @@
             
               <div class="markdown-body">
                 
-                <p>一、前置知识：位、字节</p>
+                <p>一、前置知识</p>
 <ol>
 <li>位（bit）</li>
 </ol>
@@ -287,11 +287,6 @@
 <li>数据处理的最小单位</li>
 <li>1字节&#x3D;8位</li>
 </ul>
-<p>二、前置知识：栈、堆</p>
-<ol>
-<li>栈</li>
-<li>堆</li>
-</ol>
 <p>二、基本类型</p>
 <ol>
 <li>八种类型</li>
@@ -378,14 +373,16 @@
 <li>概念</li>
 </ol>
 <ul>
-<li>基础类型：变量指向数值</li>
+<li>基本类型：变量指向数值</li>
 <li>引用类型：变量指向地址</li>
 </ul>
 <ol start="2">
 <li>内存</li>
 </ol>
-<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs ada"><span class="hljs-number">1</span>, 基本数据类型 : 被创建时 , 在栈内存中会被划分出一定的内存 , 并将数值存储在该内存中 .<br><span class="hljs-number">2</span>, 引用数据类型 : 被创建时 , 首先会在栈内存中分配一块空间 , 然后在堆内存中也会分配一块具体的空间用来<br></code></pre></td></tr></table></figure>
-
+<ul>
+<li>基本类型：存储在栈内存</li>
+<li>引用类型：存储在栈内存与堆内存</li>
+</ul>
 
                 
               </div>
